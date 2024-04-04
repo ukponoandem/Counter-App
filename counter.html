@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter app</title>
+</head>
+<body>
+
+ <h1>counter app</h1>   
+ 
+ <button onclick="add()" style=" position:absolute; left:15px; top: 18%;background-color: green;min-width: 3%; border-radius: 5px;" >+</button>
+ <p id="result" style="position:relative;left:6%;top:40px; max-width: 40px;background-color: coral;border: 1px solid; text-align: center;" > 0</p>
+ <button onclick="substract()" style="position:absolute; right:85%; top: 18%;background-color: green;border-radius: 5px; max-width: 40px;min-width: 3%; ">-</button>
+ <button onclick="Reset()" style="position:absolute; left: 79px; bottom:  67%;background-color: green; border-radius: 5px;">Reset</button>
+ <script>
+    let count =0
+    function add(){
+        count++
+        document.getElementById("result").innerHTML=count
+    }
+    function substract(){
+ count--
+ document.getElementById("result").innerHTML=count
+    }
+
+    function Reset(){
+        count=0
+        document.getElementById("result").innerHTML=count
+    }
+ </script>
+</body>
+</html>
